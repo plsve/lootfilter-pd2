@@ -8,11 +8,11 @@ The actual filtering of items is exactly the same as in Kryszard's filter, only 
 I'll be updating this filter with more styling changes as I progress more into endgame. Some of the items there are still untouched, for example Maps and the crafting currency.
 
 ## Installation
-Download the item.filter file and copy it into C:\Program Files (x86)\Diablo II\ProjectD2\filters\local.
+Download the <i>item.filter</i> file and copy it into <i>C:\Program Files (x86)\Diablo II\ProjectD2\filters\local</i>.
 
-Then from the PD2 launcher click the Item Filter Profiles button, select Local Filter, click the item.filter on the right and click Save filter.
+Then from the PD2 launcher click the <i>Item Filter Profiles</i> button, select <i>Local Filter</i>, click the <i>item.filter</i> on the right and click <i>Save filter</i>.
 
-Then ingame you can adjust the filter strictness in Options/PD2 Options/Loot Filter/Level. Items are displayed on your level so I recommend starting with strictness level 0 and increase it as you go. 
+Then ingame you can adjust the filter strictness in <i>Options/PD2 Options/Loot Filter/Level</i>. Items are displayed on your level so I recommend starting with strictness level 0 and increase it as you go. 
 ## Examples
 
 ### Potions

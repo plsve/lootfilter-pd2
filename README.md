@@ -5,7 +5,7 @@ The community favorite [Kryszard's filter](https://github.com/Kryszard-POD/Krysz
 
 The actual filtering of items is exactly the same as in Kryszard's filter, only the styling and notes have changed. Full credit still goes to him.
 
-I'll be updating this filter with more styling changes as I progress more into endgame. Some of the items there are still untouched, for example Maps and the crafting currency.
+I'll be updating this filter with more styling changes as I progress more into endgame so keep an eye on updates. Some of the items there are still untouched, for example Maps and the crafting currency.
 
 ## Installation
 Download the <i>item.filter</i> file and copy it into <i>C:\Program Files (x86)\Diablo II\ProjectD2\filters\local</i>.

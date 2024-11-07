@@ -1,4 +1,4 @@
-# PD2 'Immersive' lootfilter based on Kryszard's filter (Season 10)
+# Roadrunner's "Immersive" lootfilter for PD2 based on Kryszard's filter (Season 10)
 
 ## Features
 The community favorite [Kryszard's filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/tree/main) is really nice but it displays a lot of information that I personally would rather hide in order to have a cleaner UI. So I removed most of the added Notes in item descriptions, condensed the eth/sup/staffmod/etc tags into small handles, removed all rainbow colors and restyled rare item nameplates to have more vanilla look but still feel important and exciting. 
@@ -95,6 +95,6 @@ Valuable items show a red 2 stripe <i>gate</i> border:
 ![link](https://i.imgur.com/8e4yjVw.png)
 
 Highly valuable items show a wide purple <i>gate</i> border:
- 
+
 ![link](https://i.imgur.com/wpOnWIZ.png)
 

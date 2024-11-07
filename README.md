@@ -17,6 +17,7 @@ Then ingame you can adjust the filter strictness in Options/PD2 Options/Loot Fil
 
 ### Potions
 Bigger the letters, bigger the potion.
+
 ![link](https://i.imgur.com/DPEPLcG.png)
 
 ### Utility items
@@ -25,10 +26,12 @@ Bigger the letters, bigger the potion.
 
 ### Gems
 All named the same but bigger the symbol, bigger the gem.
+
 ![link](https://i.imgur.com/vwllPdx.png)
 
 ### Gear sockets
 1 dot = 1 socket
+
 ![link](https://i.imgur.com/X39FlbO.png)
 
 ### Gear quality
@@ -37,8 +40,9 @@ All named the same but bigger the symbol, bigger the gem.
  - Red plus = superior with 12 - 15% ED
 
  <i>Exact ED values are hidden to reduce clutter. Have a little surprise when you pick the item up :)</i> 
+
 ![link](https://i.imgur.com/8dRns6B.png)
- - Little grey minus - inferior
+ - Little grey minus = inferior
 
 ![link](https://i.imgur.com/xezMRw5.png)
 
@@ -53,6 +57,7 @@ All named the same but bigger the symbol, bigger the gem.
  - orange bar = item has a +3 staffmod
 
  <i>Exact staffmod values are hidden to reduce clutter. Have a little surprise when you pick the item up :)</i>
+
 ![link](https://i.imgur.com/rF8rLSE.png)
 
 For example the Guardian Crown has 3 bars - 2 orange and 1 yellow. Meaning it has 3 staffmods, which are +3 +2 +3 respectively.
@@ -82,11 +87,14 @@ Similar to the staffmods above except the bars are only white and the number of 
 ### Valuable items
 
 Light or potentially high value items show a 1 stripe border:
+
 ![link](https://i.imgur.com/kirIILt.png)
 
 Valuable items show a red 2 stripe <i>gate</i> border:
+
 ![link](https://i.imgur.com/8e4yjVw.png)
 
-Highly valuable items show a wide purple <i>gate</i> border: 
+Highly valuable items show a wide purple <i>gate</i> border:
+ 
 ![link](https://i.imgur.com/wpOnWIZ.png)
 

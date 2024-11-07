@@ -546,8 +546,8 @@ ItemDisplay[ETH]: %LIGHT_GRAY%E %NAME%%CONTINUE%
 ItemDisplay[SUP ED<6]: %WHITE%+ %NAME%%CONTINUE%
 ItemDisplay[WEAPON SUP ED~6-11]: %CORAL%+ %NAME% %CONTINUE%
 ItemDisplay[WEAPON SUP ED>11]: %RED%+ %NAME% %CONTINUE%
-ItemDisplay[ARMOR SUP ED~6-11]: %TEAL%+ %NAME% %CONTINUE%
-ItemDisplay[ARMOR SUP ED>11]: %BLUE%+ %NAME% %CONTINUE%
+ItemDisplay[ARMOR SUP ED~6-11]: %CORAL%+ %NAME% %CONTINUE%
+ItemDisplay[ARMOR SUP ED>11]: %RED%+ %NAME% %CONTINUE%
 ItemDisplay[INF !(rin OR amu) ID]: %GRAY%-%NAME%%CONTINUE%
 
 //Show me names of items in gambling screen
@@ -825,12 +825,12 @@ ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) (CLVL>1 FILTL
 //Runes
 ItemDisplay[(RUNE<18) (CLVL>1 AND (CLVL<80 OR FILTLVL<4))]: %PX-E9%%NAME%
 ItemDisplay[(RUNE<18) (CLVL=1 OR (CLVL>79 FILTLVL>3))]: %PX-E9%%NAME%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<6]: %DOT-E9%%ORANGE%|    %NAME%     %ORANGE%|
+ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<6]: %DOT-E9%%ORANGE%|    %NAME%    %ORANGE%|
 ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>5]: %DOT-E9%%NAME%
 ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%RED%<||>    %NAME%     %RED%<||>
-ItemDisplay[RUNE>25]: %BORDER-62%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+ItemDisplay[RUNE>25]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
 
-//%BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+
 
 //All Charms
 ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %DOT-9B%%PURPLE%|%BLUE%   %NAME%   %PURPLE%|
@@ -1023,10 +1023,10 @@ ItemDisplay[(ba6 OR dr2 OR ne6 OR ulb) UNI !ID]: %DOT-68%%GOLD%||   %NAME%   %GO
 ItemDisplay[(9ar OR ob6 OR am5 OR pa3) UNI !ID]: %PX-68%%TIER-5%%NAME%
 
 //GG UNIQUES
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
 
 //GG UNIQUES only when ETH
-ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
 
 //OK UNIQUES only when ETH
 ItemDisplay[(7pa OR 7bt OR 7gi OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7 OR 7sr) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
@@ -2383,7 +2383,14 @@ ItemDisplay[NMAG !RW SK383=3]:%NAME%%ORANGE%i%CONTINUE%
 
 
 
+//Show me exactly RES value on PALADIN shields
+ItemDisplay[DIN NMAG !RW RES>0 AND RES<20]: %NAME% %WHITE%o%CONTINUE%
+ItemDisplay[DIN NMAG !RW RES>19 AND RES<40]: %RED%|    %NAME% %YELLOW%o    %RED%|%CONTINUE%
+ItemDisplay[DIN NMAG !RW RES>39]: %MAP-68%%RED%<||>    %NAME% %ORANGE%O    %RED%<||>%CONTINUE%
 
+//Show me ED TAG on PALADIN shields
+ItemDisplay[DIN NMAG !RW EDAM>0 AND EDAM<50]: %NAME% %WHITE%o%CONTINUE%
+ItemDisplay[DIN NMAG !RW EDAM>49]:  %RED%|    %NAME% %YELLOW%o     %RED%|%CONTINUE%
 
 
 
@@ -2397,22 +2404,29 @@ ItemDisplay[SOCK=4]: %NAME% %WHITE%::%CONTINUE%
 ItemDisplay[SOCK=5]: %NAME% %WHITE%::.%CONTINUE%
 ItemDisplay[SOCK=6]: %NAME% %WHITE%:::%CONTINUE%
 
-//Show me exactly RES value on PALADIN shields
-ItemDisplay[DIN NMAG !RW RES>0 AND RES<20]: %GRAY%[%TAN%%RES%%WHITE%r%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES>19 AND RES<25]: %GRAY%[%DARK_GREEN%%RES%%WHITE%r%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES>24]: %GRAY%[%GREEN%%RES%%WHITE%r%GRAY%] %NAME%%CONTINUE%
 
-//Show me ED TAG on PALADIN shields
-ItemDisplay[DIN NMAG !RW EDAM>0 AND EDAM<51]: %GRAY%[%EDAM%%WHITE%ed%GRAY%] %NAME%%CONTINUE%
-ItemDisplay[DIN NMAG !RW EDAM>50]: %GRAY%[%RED%%EDAM%%WHITE%ed%GRAY%] %NAME%%CONTINUE%  
 
 
 //Superior Bases with ED
+
 //Armors
-ItemDisplay[(((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC))) ELT) OR (DIN (EXC OR ELT) (RES>19 OR AR>100)) OR (gth OR ful OR aar) OR (xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xtp) OR ci3 OR xsh OR xhm) !SOCK=1 !INF SUP NMAG ED~5-15]: %BLUE%| %NAME% %BLUE%|%CONTINUE%
+
+//GG
+
+//Good
+// %RED%<||>  %NAME%  %RED%<||>%CONTINUE%
+//Ok
+ItemDisplay[(((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC))) ELT) OR (DIN (EXC OR ELT) (RES>19 OR AR>100)) OR (gth OR ful OR aar) OR (xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xtp) OR ci3 OR xsh OR xhm) !SOCK=1 !INF SUP NMAG ED~5-15]: %RED%|  %NAME%  %RED%|%CONTINUE%
 
 //Weapons
+
+//GG
+
+//Good
+
+//Ok
 ItemDisplay[(((WEAPON !THROWING !SIN !SOR !WAND !SCEPTER !STAFF !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) !DAGGER) ELT) OR 8rx) !SOCK=1 !INF SUP NMAG ED~5-15]: %RED%| %NAME% %RED%|%CONTINUE%
+
 
 //Fixing coloring for vendors
 ItemDisplay[UNI OR RW]: %NAME%%GOLD%{%NAME%}%CONTINUE%

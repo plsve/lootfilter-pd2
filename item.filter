@@ -838,8 +838,6 @@ ItemDisplay[RUNE>25 QTY=1]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %N
 ItemDisplay[RUNE>25 QTY>1]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME% %TAN%x %WHITE%%QTY%     %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 
 
-
-
 //All Charms
 ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID]: %DOT-9B%%PURPLE%|%BLUE%   %NAME%   %PURPLE%|
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-68%%NAME%

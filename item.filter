@@ -823,12 +823,20 @@ ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>3) !(gzv OR gpv OR glw OR gpw OR 
 ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) (CLVL>1 FILTLVL<6)]: %PX-E0%%TIER-2%%NAME%%CONTINUE%
 
 //Runes
-ItemDisplay[(RUNE<18) (CLVL>1 AND (CLVL<80 OR FILTLVL<4))]: %PX-E9%%NAME%
-ItemDisplay[(RUNE<18) (CLVL=1 OR (CLVL>79 FILTLVL>3))]: %PX-E9%%NAME%
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<6]: %DOT-E9%%ORANGE%|    %NAME%    %ORANGE%|
-ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>5]: %DOT-E9%%NAME%
-ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%RED%<||>    %NAME%     %RED%<||>
-ItemDisplay[RUNE>25]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
+ItemDisplay[(RUNE<18) (CLVL>1 AND (CLVL<80 OR FILTLVL<4)) QTY=1]: %PX-E9%%NAME%
+ItemDisplay[(RUNE<18) (CLVL=1 OR (CLVL>79 FILTLVL>3)) QTY>1]: %PX-E9%%NAME% %TAN%x %WHITE%%QTY%
+
+ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<6 QTY=1]: %DOT-E9%%ORANGE%|    %NAME%    %ORANGE%|
+ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>5 QTY=1]: %DOT-E9%%NAME%
+ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL<6 QTY>1]: %DOT-E9%%ORANGE%|    %NAME% %TAN%x %WHITE%%QTY%   %ORANGE%|
+ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>5 QTY>1]: %DOT-E9%%NAME% %TAN%x %WHITE%%QTY%
+
+ItemDisplay[RUNE>19 AND RUNE<26 QTY=1]: %DOT-62%%RED%<||>    %NAME%    %RED%<||>
+ItemDisplay[RUNE>19 AND RUNE<26 QTY>1]: %DOT-62%%RED%<||>    %NAME% %TAN%x %WHITE%%QTY%   %RED%<||>
+
+ItemDisplay[RUNE>25 QTY=1]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
+ItemDisplay[RUNE>25 QTY>1]: %BORDER-68%%PURPLE% <||||>      %NAME% %TAN%x %WHITE%%QTY%    %PURPLE%<||||> %CONTINUE%
+
 
 
 
@@ -1014,9 +1022,9 @@ ItemDisplay[(7tw OR baf OR 7qs OR 6bs OR utg) UNI !ID]: %BORDER-68%%PURPLE%<||||
 //GG PD2 UNIQUES only when ETH
 ItemDisplay[(utp OR 7st OR 7cm OR 7fb) UNI ETH !ID]: %BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
 //OK PD2 UNIQUES only when ETH
-ItemDisplay[(am5) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(am5) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //OK PD2 UNIQUES
-ItemDisplay[(drf OR utp OR 7st OR 7cm OR 7fb OR ned OR ame OR ulg OR ung OR urg OR drc OR 7di) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(drf OR utp OR 7st OR 7cm OR 7fb OR ned OR ame OR ulg OR ung OR urg OR drc OR 7di) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //OK/Lower Value PD2 UNIQUES
 ItemDisplay[(ba6 OR dr2 OR ne6 OR ulb) UNI !ID]: %DOT-68%%GOLD%||   %NAME%   %GOLD%||
 //PD2 Uniques worth notifying
@@ -1029,32 +1037,32 @@ ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit 
 ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
 
 //OK UNIQUES only when ETH
-ItemDisplay[(7pa OR 7bt OR 7gi OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7 OR 7sr) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(7pa OR 7bt OR 7gi OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7 OR 7sr) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 
 //OK UNIQUES
 //belts
-ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR uvc) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR uvc) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //armors
-ItemDisplay[(xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(xea OR uui OR xth OR xhn OR xtp OR xlt OR upl OR uld OR utu) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //gloves
-ItemDisplay[(uvg OR uhg OR umg) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(uvg OR uhg OR umg) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //helmets
-ItemDisplay[(xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(xh9 OR usk OR ci2 OR baa OR bac OR dra OR dre OR uhm OR uh9 OR xhm OR drd OR bae) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //boots
-ItemDisplay[(lbt OR xhb OR uhb OR xvb) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(lbt OR xhb OR uhb OR xvb) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //shields
-ItemDisplay[(nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //weapons
-ItemDisplay[(7ts OR 7s8 OR 9bw OR 7wc OR 7bw OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh OR 7p7 OR 7wa) UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(7ts OR 7s8 OR 9bw OR 7wc OR 7bw OR 7cs OR 7ws OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR obc OR 7lw OR amf OR 7wh OR 7p7 OR 7wa) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 
 //OK/Lower Value UNIQUES
 ItemDisplay[(ltp OR xcl) UNI !ID]: %DOT-68%%GOLD%||   %NAME%   %GOLD%||
 
 //Rainbow Facet
-ItemDisplay[jew UNI !ID]: %MAP-68%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[jew UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 
 //Good SET parts when ETH
-ItemDisplay[(7fb OR 7gd OR 7ls OR 7m7 OR 7qr OR 7ws) SET ETH !ID]: %MAP-84%%RED%<||>    %NAME%     %RED%<||>
+ItemDisplay[(7fb OR 7gd OR 7ls OR 7m7 OR 7qr OR 7ws) SET ETH !ID]: %MAP-84%%RED%<||>    %NAME%    %RED%<||>
 
 //Good SET parts
 ItemDisplay[(amu OR rin OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%DARK_GREEN%*%GREEN%*%WHITE%*     %NAME%     %WHITE%*%GREEN%*%DARK_GREEN%*

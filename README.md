@@ -94,7 +94,15 @@ Valuable items show a red 2 stripe <i>gate</i> border:
 
 ![link](https://i.imgur.com/8e4yjVw.png)
 
-Highly valuable items show a wide purple <i>gate</i> border:
+Highly valuable items show a wide purple/white <i>gate</i> border:
 
-![link](https://i.imgur.com/wpOnWIZ.png)
+![link](https://i.imgur.com/XpsDmCs.png)
+
+### Maps
+ - <i>Mountain</i> border = tier 1
+ - <i>Mountain</i> border with 2 stripes = tier 2
+ - <i>Mountain</i> border with 3 stripes = tier 3
+ - <i>Mountain</i> border with 4 stripes = tier 4
+
+![link](https://i.imgur.com/DqpxljV.png)
 

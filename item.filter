@@ -834,8 +834,8 @@ ItemDisplay[(RUNE=18 OR RUNE=19) FILTLVL>5 QTY>1]: %DOT-E9%%NAME% %TAN%x %WHITE%
 ItemDisplay[RUNE>19 AND RUNE<26 QTY=1]: %DOT-62%%RED%<||>    %NAME%    %RED%<||>
 ItemDisplay[RUNE>19 AND RUNE<26 QTY>1]: %DOT-62%%RED%<||>    %NAME% %TAN%x %WHITE%%QTY%   %RED%<||>
 
-ItemDisplay[RUNE>25 QTY=1]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
-ItemDisplay[RUNE>25 QTY>1]: %BORDER-68%%PURPLE% <||||>      %NAME% %TAN%x %WHITE%%QTY%    %PURPLE%<||||> %CONTINUE%
+ItemDisplay[RUNE>25 QTY=1]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
+ItemDisplay[RUNE>25 QTY>1]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME% %TAN%x %WHITE%%QTY%     %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 
 
 
@@ -1018,9 +1018,9 @@ ItemDisplay[(rar OR rbe OR ram) UNI !ID]: %BORDER-68%%GREEN%HOLY %PURPLE%*%RED%*
 
 //NEW PD2 UNIQUES
 //GG PD2 UNIQUES
-ItemDisplay[(7tw OR baf OR 7qs OR 6bs OR utg) UNI !ID]: %BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+ItemDisplay[(7tw OR baf OR 7qs OR 6bs OR utg) UNI !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 //GG PD2 UNIQUES only when ETH
-ItemDisplay[(utp OR 7st OR 7cm OR 7fb) UNI ETH !ID]: %BORDER-68%%PURPLE%<||||>    %NAME%     %PURPLE%<||||>
+ItemDisplay[(utp OR 7st OR 7cm OR 7fb) UNI ETH !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 //OK PD2 UNIQUES only when ETH
 ItemDisplay[(am5) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //OK PD2 UNIQUES
@@ -1031,10 +1031,10 @@ ItemDisplay[(ba6 OR dr2 OR ne6 OR ulb) UNI !ID]: %DOT-68%%GOLD%||   %NAME%   %GO
 ItemDisplay[(9ar OR ob6 OR am5 OR pa3) UNI !ID]: %PX-68%%TIER-5%%NAME%
 
 //GG UNIQUES
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
+ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 
 //GG UNIQUES only when ETH
-ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE% <||||>      %NAME%      %PURPLE%<||||> %CONTINUE%
+ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 
 //OK UNIQUES only when ETH
 ItemDisplay[(7pa OR 7bt OR 7gi OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7 OR 7sr) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
@@ -2714,7 +2714,7 @@ ItemDisplay[MAPTIER>0 !ID UNI]: %MAP-7F%%DOT-68%%RED%<||>   %NAME%   %RED%<||>%C
 ItemDisplay[MAPTIER~1-3]: %NAME%{%TAN%Note%WHITE%: To Modify Maps visit Anya}%CONTINUE%
 ItemDisplay[MAPTIER~1-4]: %NAME%{%WHITE%Cube 3 Maps of Same Tier = Random Map of Same Tier%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER~1-3 MAG]: %NAME%{%WHITE%To Reroll: Cube with 3 %TAN%x %WHITE%Perf %GRAY%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[t60 OR t61 OR t62 OR t63 OR t64 OR t65 OR t66 OR t67 OR t68 OR t69]: %NAME%{%GRAY%(without PermaDeath on HC)%NL%You can challenge other Players here%NL%%TAN%Note%WHITE%: PvP Arena}%CONTINUE%
+ItemDisplay[t60 OR t61 OR t62 OR t63 OR t64 OR t65 OR t66 OR t67 OR t68 OR t69]: %NAME%{%GRAY%(without Permanent Death on HC)%NL%You can challenge other Players here%NL%%TAN%Note%WHITE%: PvP Arena}%CONTINUE%
 
 //Map Immunes (Fire/Cold/Light/Poison/Magic/Phys)
 //ItemDisplay[t11]: %NAME%{%WHITE%Immunes: %RED%125% %BLUE%110% %YELLOW%140% %GREEN%105% %ORANGE%110% %GOLD%120%%NL%%NAME%}%CONTINUE%

@@ -1029,7 +1029,7 @@ ItemDisplay[(ba6 OR dr2 OR ne6 OR ulb) UNI !ID]: %DOT-68%%GOLD%||   %NAME%   %GO
 ItemDisplay[(9ar OR ob6 OR am5 OR pa3) UNI !ID]: %PX-68%%TIER-5%%NAME%
 
 //GG UNIQUES
-ItemDisplay[(rin OR amu OR 6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
+ItemDisplay[(6ws OR uar OR ulc OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
 
 //GG UNIQUES only when ETH
 ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE%  <|%WHITE%|:|%PURPLE%|>       %NAME%       %PURPLE%<|%WHITE%|:|%PURPLE%|>  %CONTINUE%
@@ -1038,6 +1038,8 @@ ItemDisplay[(9gm OR 7gm OR 7s8 OR 7p7 OR 7wa) UNI ETH !ID]: %BORDER-68%%PURPLE% 
 ItemDisplay[(7pa OR 7bt OR 7gi OR 7m7 OR 8ls OR 7gl OR 7b8 OR 7bk OR xpl OR 7ha OR 7b7 OR 7sr) UNI ETH !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 
 //OK UNIQUES
+//other
+ItemDisplay[(rin OR amu) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //belts
 ItemDisplay[(ztb OR zlb OR zvb OR zhb OR umc OR uvc) UNI !ID]: %MAP-68%%RED%<||>    %NAME%    %RED%<||>
 //armors
